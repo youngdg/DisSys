@@ -1,3 +1,5 @@
+// David Young - Encoder
+
 import java.io.IOException;
 import java.io.StringWriter;
 import java.net.*;
@@ -145,6 +147,7 @@ public class Encoder {
 		return sendData;
 	}
 	
+    // A JSON message is created, including all of the search results
 	byte[] searchResults(String word, int node_id, int send_id, Hashtable<String, Integer> wordIndex){
 		byte[] sendData = new byte[1024];	
 		JSONObject obj=new JSONObject();
@@ -174,6 +177,7 @@ public class Encoder {
 		return sendData;
 	}
 	
+    // An ACK Index message is created
 	byte[] ackIndex(int node, String word){
 		byte[] sendData = new byte[1024];	
 		JSONObject obj=new JSONObject();
@@ -192,6 +196,7 @@ public class Encoder {
 		return sendData;
 	}
 	
+    // A PING is created
 	byte[] ping(int target, int sender, int ip){
 		byte[] sendData = new byte[1024];	
 		JSONObject obj=new JSONObject();
@@ -211,6 +216,7 @@ public class Encoder {
 		return sendData;
 	}
 	
+    // An ACK is created
 	byte[] ack(int node_id, int ip){
 		byte[] sendData = new byte[1024];	
 		JSONObject obj=new JSONObject();

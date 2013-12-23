@@ -1,3 +1,5 @@
+// David Young - Node
+
 import org.json.simple.*;
 import org.json.simple.parser.ContainerFactory;
 import org.json.simple.parser.JSONParser;
@@ -7,7 +9,7 @@ import java.net.*;
 import java.util.*;
 import java.io.*;
 
-
+// A node class which implements the interface Peer Search
 public class Node implements PeerSearch {
 	int nodeidentifier;
 	InetSocketAddress ip;

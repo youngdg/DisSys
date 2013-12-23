@@ -1,3 +1,5 @@
+// David Young - OtherNode
+
 // A class to store information about other nodes
 public class OtherNode {
 	int node_id;
